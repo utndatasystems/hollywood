@@ -1,0 +1,102 @@
+{
+  "start_year": 2000,
+  "end_year": 2050,
+  "year_weights": [
+    {
+      "year": 2000,
+      "weight": 0.8
+    },
+    {
+      "year": 2005,
+      "weight": 1.2
+    },
+    {
+      "year": 2010,
+      "weight": 1.5
+    },
+    {
+      "year": 2015,
+      "weight": 1.8
+    },
+    {
+      "year": 2020,
+      "weight": 0.9
+    },
+    {
+      "year": 2025,
+      "weight": 2.1
+    },
+    {
+      "year": 2030,
+      "weight": 2.5
+    },
+    {
+      "year": 2035,
+      "weight": 1.9
+    },
+    {
+      "year": 2040,
+      "weight": 1.4
+    },
+    {
+      "year": 2045,
+      "weight": 2.8
+    },
+    {
+      "year": 2050,
+      "weight": 3.2
+    }
+  ],
+  "phases": [
+    {
+      "label": "Digital Transition Era",
+      "movie_density": 0.4,
+      "economic_heat": 0.5,
+      "prestige_bias": 0.8,
+      "franchise_pressure": 0.3,
+      "experimentation_bias": 0.6
+    },
+    {
+      "label": "Franchise Hegemony",
+      "movie_density": 0.7,
+      "economic_heat": 0.9,
+      "prestige_bias": 0.4,
+      "franchise_pressure": 0.9,
+      "experimentation_bias": 0.2
+    },
+    {
+      "label": "The Great Fragmentation",
+      "movie_density": 0.5,
+      "economic_heat": 0.4,
+      "prestige_bias": 0.6,
+      "franchise_pressure": 0.5,
+      "experimentation_bias": 0.8
+    },
+    {
+      "label": "Synthetic Renaissance",
+      "movie_density": 0.9,
+      "economic_heat": 1.0,
+      "prestige_bias": 0.7,
+      "franchise_pressure": 0.6,
+      "experimentation_bias": 0.9
+    }
+  ],
+  "country_ramps": {
+    "North America": "ramp_down",
+    "Asia": "ramp_up",
+    "Africa": "ramp_up",
+    "Europe": "plateau",
+    "South America": "ramp_up"
+  },
+  "debut_cadence": "exponential_growth_post_2030",
+  "retirement_cadence": "cyclical_every_10_years",
+  "sequel_spacing": "2.5_years_average",
+  "graph_evolution": "dense_interconnected_nodes_post_2035",
+  "historical_event_cadence": "high_frequency_post_2028",
+  "meta": {
+    "schema_version": 1,
+    "artifact": "temporal_regime_plan",
+    "generator_mode": "llm",
+    "model": "gemini-3.1-flash-lite"
+  }
+}

@@ -1,0 +1,41 @@
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated benchmark databases and caches
+*.tmp
+*.log
+*.bak
+*.duckdb.wal
+load_hollywood.sql
+
+# Generator runtime outputs
+entities/
+graph/
+_step100_resume/
+imdb_schema/
+exports/
+runs/
+logs/
+checkpoints/
+models/
+results/
+temp_results/
+audit/
+reports/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

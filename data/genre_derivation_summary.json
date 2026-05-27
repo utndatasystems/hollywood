@@ -1,0 +1,16 @@
+{
+  "primary_movie_count": 200000,
+  "genre_row_count": 446497,
+  "secondary_genre_row_count": 246497,
+  "movies_with_secondary_genres": 193384,
+  "movies_without_primary_genre": 0,
+  "keyword_signal_movie_count": 200000,
+  "company_signal_movie_count": 200000,
+  "max_genres_per_movie": 4,
+  "primary_genre_alias_counts": {
+    "Disaster->Action": 1715,
+    "Experimental->Drama": 1643,
+    "Martial Arts->Action": 1704,
+    "Superhero->Action": 1662
+  }
+}

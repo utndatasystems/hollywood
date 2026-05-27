@@ -1,0 +1,111 @@
+{
+  "schema": "job_imdb_core",
+  "release_dataset": "hollywood_200k",
+  "strict_job": true,
+  "include_extras": false,
+  "source_workspace": "not included in public release; generated with the bundled generator snapshot",
+  "csv_dir": "data/imdb_csv",
+  "duckdb": "data/hollywood_200k.duckdb",
+  "core_tables": {
+    "title": 351455,
+    "name": 480000,
+    "cast_info": 4980221,
+    "char_name": 1483829,
+    "company_name": 18003,
+    "movie_companies": 777098,
+    "movie_keyword": 2095957,
+    "keyword": 21756,
+    "movie_link": 25589,
+    "aka_title": 199938,
+    "aka_name": 73735,
+    "movie_info": 5392497,
+    "movie_info_idx": 703170,
+    "person_info": 2400095,
+    "info_type": 25,
+    "kind_type": 7,
+    "role_type": 12,
+    "company_type": 4,
+    "link_type": 18,
+    "complete_cast": 690910,
+    "comp_cast_type": 4
+  },
+  "genre_derivation": {
+    "primary_movie_count": 200000,
+    "genre_row_count": 446497,
+    "secondary_genre_row_count": 246497,
+    "movies_with_secondary_genres": 193384,
+    "movies_without_primary_genre": 0,
+    "keyword_signal_movie_count": 200000,
+    "company_signal_movie_count": 200000,
+    "max_genres_per_movie": 4,
+    "primary_genre_alias_counts": {
+      "Disaster->Action": 1715,
+      "Experimental->Drama": 1643,
+      "Martial Arts->Action": 1704,
+      "Superhero->Action": 1662
+    }
+  },
+  "company_country_export": {
+    "policy": "imdb-skewed",
+    "source_country_counts_top20": {
+      "Nepal": 212,
+      "Indonesia": 201,
+      "Macedonia": 200,
+      "USA": 197,
+      "Morocco": 196,
+      "Bulgaria": 195,
+      "France": 195,
+      "Cuba": 194,
+      "Germany": 194,
+      "Mexico": 194,
+      "Bahrain": 194,
+      "Slovenia": 193,
+      "Sweden": 192,
+      "Iceland": 192,
+      "Lebanon": 192,
+      "Ghana": 190,
+      "Argentina": 190,
+      "Jordan": 190,
+      "Malaysia": 190,
+      "Mongolia": 189
+    },
+    "export_country_code_counts_top20": {
+      "[us]": 8157,
+      "[gb]": 1362,
+      "[in]": 991,
+      "[jp]": 801,
+      "[fr]": 750,
+      "[de]": 637,
+      "[ca]": 548,
+      "[kr]": 532,
+      "[cn]": 480,
+      "[it]": 365,
+      "[es]": 331,
+      "[au]": 322,
+      "[br]": 297,
+      "[mx]": 290,
+      "[ru]": 207,
+      "[nl]": 172,
+      "[hk]": 167,
+      "[ie]": 150,
+      "[se]": 126,
+      "[ch]": 101
+    },
+    "source_country_preserved_count": 163,
+    "company_count": 18000
+  },
+  "tv_network_company_export": {
+    "source_network_company_id": 4172,
+    "matched_existing_company_name": 1825,
+    "synthetic_network_company": 3
+  },
+  "audit_files": {
+    "source_export_coverage": "data/source_export_coverage.csv",
+    "genre_derivation_summary": "data/genre_derivation_summary.json",
+    "checksums": "data/checksums.sha256"
+  },
+  "notes": [
+    "Public dataset directory contains only the 21 strict JOB/IMDb core CSV tables.",
+    "Optional generated-world extra tables were excluded from this release package."
+  ]
+}

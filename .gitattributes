@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+*.duckdb filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Preserve dataset bytes exactly. Only CSVs above GitHub's 100 MB file limit
+# are stored through Git LFS; smaller CSVs are committed as regular blobs.
+data/imdb_csv/*.csv -text -diff
+data/imdb_csv/cast_info.csv filter=lfs diff=lfs merge=lfs -text
+data/imdb_csv/char_name.csv filter=lfs diff=lfs merge=lfs -text
+data/imdb_csv/movie_info.csv filter=lfs diff=lfs merge=lfs -text
+data/imdb_csv/person_info.csv filter=lfs diff=lfs merge=lfs -text

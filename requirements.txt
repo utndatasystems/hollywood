@@ -1,0 +1,10 @@
+numpy
+pandas
+pyarrow
+polars
+python-dotenv
+requests
+google-genai
+psutil
+pympler
+duckdb

@@ -1,0 +1,155 @@
+{
+  "archetype_weights": {
+    "hero": 0.3,
+    "villain": 0.25,
+    "mentor": 0.15,
+    "mysterious_stranger": 0.15,
+    "comic_relief": 0.15
+  },
+  "title_prefixes": [
+    "Dr.",
+    "Capt.",
+    "Sgt.",
+    "Agent",
+    "Master",
+    "Lady",
+    "Lord",
+    "Professor",
+    "Commander",
+    "Detective",
+    "General"
+  ],
+  "quote_nicknames": [
+    "The Hammer",
+    "Ghost",
+    "Ace",
+    "Whisper",
+    "Shadow",
+    "Sparky",
+    "Ironclad",
+    "Viper",
+    "Lucky",
+    "Zero"
+  ],
+  "solo_monikers": [
+    "Cipher",
+    "Nemesis",
+    "Oracle",
+    "Specter",
+    "Apex",
+    "Vanguard",
+    "Drifter",
+    "Zenith",
+    "Echo",
+    "Void"
+  ],
+  "codename_adjectives": [
+    "Silent",
+    "Crimson",
+    "Arctic",
+    "Neon",
+    "Broken",
+    "Hidden",
+    "Golden",
+    "Obsidian",
+    "Feral",
+    "Electric"
+  ],
+  "codename_nouns": [
+    "Falcon",
+    "Wolf",
+    "Raven",
+    "Storm",
+    "Blade",
+    "Dragon",
+    "Phoenix",
+    "Serpent",
+    "Titan",
+    "Spider"
+  ],
+  "mythic_epithets": [
+    "The Unbroken",
+    "Bringer of Storms",
+    "The Last Sentinel",
+    "Watcher of the Abyss",
+    "The Sun-Eater",
+    "Voice of the Void",
+    "The Eternal Wanderer",
+    "Sovereign of Ash",
+    "The Star-Forged",
+    "Keeper of Secrets"
+  ],
+  "role_epithets": [
+    "The Architect",
+    "The Enforcer",
+    "The Catalyst",
+    "The Scavenger",
+    "The Archivist",
+    "The Mercenary",
+    "The Outcast",
+    "The Strategist",
+    "The Saboteur",
+    "The Visionary"
+  ],
+  "alias_templates": [
+    "{human_name}",
+    "{title_prefix} {human_last_name}",
+    "{human_first_name} '{quote_nickname}' {human_last_name}",
+    "{solo_moniker}",
+    "{codename_adj} {codename_noun}",
+    "{human_first_name} the {role_epithet}",
+    "{mythic_epithet}",
+    "{title_prefix} {solo_moniker}"
+  ],
+  "nonliteral_share_by_archetype": {
+    "hero": 0.2,
+    "villain": 0.7,
+    "mentor": 0.4,
+    "mysterious_stranger": 0.9,
+    "comic_relief": 0.5
+  },
+  "human_name_mix_by_archetype": {
+    "hero": 0.8,
+    "villain": 0.3,
+    "mentor": 0.6,
+    "mysterious_stranger": 0.1,
+    "comic_relief": 0.5
+  },
+  "title_prefixes_m": [
+    "Dr.",
+    "Prof.",
+    "Capt.",
+    "Det.",
+    "Agent",
+    "Judge",
+    "Chief",
+    "King",
+    "Lord"
+  ],
+  "title_prefixes_f": [
+    "Dr.",
+    "Prof.",
+    "Capt.",
+    "Det.",
+    "Agent",
+    "Judge",
+    "Chief",
+    "Queen",
+    "Lady"
+  ],
+  "title_prefixes_nb": [
+    "Dr.",
+    "Prof.",
+    "Capt.",
+    "Det.",
+    "Agent",
+    "Judge",
+    "Chief"
+  ],
+  "meta": {
+    "schema_version": 1,
+    "artifact": "character_identity_bank",
+    "generator_mode": "llm",
+    "model": "gemini-3.1-flash-lite"
+  }
+}

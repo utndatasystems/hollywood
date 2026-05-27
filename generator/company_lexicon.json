@@ -1,0 +1,320 @@
+{
+  "prefixes": [
+    "Apex",
+    "Blue",
+    "Nova",
+    "Prime",
+    "Silver",
+    "Iron",
+    "Zenith",
+    "Global",
+    "Urban",
+    "True",
+    "Bold",
+    "Rapid",
+    "Golden",
+    "Silent",
+    "Vivid",
+    "Omni",
+    "Core",
+    "First",
+    "Deep",
+    "High"
+  ],
+  "suffixes": [
+    "Studios",
+    "Pictures",
+    "Media",
+    "Films",
+    "Entertainment",
+    "Productions",
+    "Group",
+    "Collective",
+    "Works",
+    "Labs",
+    "Vision",
+    "Dynamics",
+    "Systems",
+    "House",
+    "Network",
+    "Ventures",
+    "Creative",
+    "Partners",
+    "Alliance",
+    "Flow"
+  ],
+  "abstract_nouns": [
+    "Horizon",
+    "Legacy",
+    "Momentum",
+    "Vision",
+    "Echo",
+    "Pulse",
+    "Summit",
+    "Catalyst",
+    "Zenith",
+    "Origin",
+    "Spirit",
+    "Insight",
+    "Paradigm",
+    "Essence",
+    "Impact",
+    "Spectrum",
+    "Unity",
+    "Quest",
+    "Focus",
+    "Aura"
+  ],
+  "material_words": [
+    "Steel",
+    "Glass",
+    "Stone",
+    "Iron",
+    "Copper",
+    "Silk",
+    "Neon",
+    "Chrome",
+    "Quartz",
+    "Marble",
+    "Timber",
+    "Carbon",
+    "Bronze",
+    "Silver",
+    "Gold",
+    "Crystal",
+    "Granite",
+    "Paper",
+    "Ink",
+    "Canvas"
+  ],
+  "geographic_words": [
+    "Pacific",
+    "Atlantic",
+    "Northern",
+    "Southern",
+    "Alpine",
+    "Coastal",
+    "Continental",
+    "Western",
+    "Eastern",
+    "Polar",
+    "Valley",
+    "Ridge",
+    "Delta",
+    "Island",
+    "Canyon",
+    "Bay",
+    "Summit",
+    "Basin",
+    "Territory",
+    "Frontier"
+  ],
+  "motion_words": [
+    "Shift",
+    "Flow",
+    "Drive",
+    "Velocity",
+    "Orbit",
+    "Glide",
+    "Surge",
+    "Drift",
+    "Pulse",
+    "Stream",
+    "Current",
+    "Motion",
+    "Glide",
+    "Sprint",
+    "Launch",
+    "Rise",
+    "Turn",
+    "Sweep",
+    "Wave",
+    "Flash"
+  ],
+  "mythic_words": [
+    "Atlas",
+    "Titan",
+    "Oracle",
+    "Phoenix",
+    "Apollo",
+    "Aegis",
+    "Vanguard",
+    "Odyssey",
+    "Siren",
+    "Nexus",
+    "Hero",
+    "Legend",
+    "Mythos",
+    "Gaia",
+    "Titan",
+    "Helios",
+    "Elysium",
+    "Arcadia",
+    "Stellar",
+    "Astral"
+  ],
+  "templates": [
+    "{prefix} {suffix}",
+    "{abstract} {suffix}",
+    "{geo} {suffix}",
+    "{mythic} {suffix}",
+    "{prefix} {abstract} {suffix}",
+    "{material} {suffix}",
+    "{motion} {suffix}",
+    "{prefix} {motion} {suffix}"
+  ],
+  "tier_styles": {
+    "Epic": [
+      "{mythic} {suffix}",
+      "{prefix} {abstract} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "A": [
+      "{prefix} {suffix}",
+      "{abstract} {suffix}",
+      "{motion} {suffix}"
+    ],
+    "Mid": [
+      "{prefix} {suffix}",
+      "{material} {suffix}",
+      "{geo} {suffix}"
+    ],
+    "Indie": [
+      "{abstract} {suffix}",
+      "{motion} {suffix}",
+      "{prefix} {suffix}"
+    ],
+    "Micro": [
+      "{material} {suffix}",
+      "{prefix} {suffix}"
+    ]
+  },
+  "country_style_bias": {
+    "USA": [
+      "Apex",
+      "Nova",
+      "Pacific",
+      "Atlantic"
+    ],
+    "UK": [
+      "Prime",
+      "Silver",
+      "Northern",
+      "Alpine"
+    ],
+    "France": [
+      "Vivid",
+      "Aura",
+      "Continental",
+      "Glass"
+    ],
+    "India": [
+      "Golden",
+      "Zenith",
+      "Summit",
+      "Pulse"
+    ],
+    "South Korea": [
+      "Neon",
+      "Velocity",
+      "Orbit",
+      "Core"
+    ],
+    "Japan": [
+      "Silent",
+      "Iron",
+      "Crystal",
+      "Stream"
+    ],
+    "Germany": [
+      "Steel",
+      "Urban",
+      "Systems",
+      "Dynamics"
+    ],
+    "Brazil": [
+      "Coastal",
+      "Flow",
+      "Vivid",
+      "Spirit"
+    ],
+    "Canada": [
+      "Ridge",
+      "Timber",
+      "Northern",
+      "Frontier"
+    ],
+    "China": [
+      "Global",
+      "Omni",
+      "Summit",
+      "Rise"
+    ],
+    "Italy": [
+      "Marble",
+      "Vision",
+      "Echo",
+      "Legend"
+    ],
+    "Spain": [
+      "Bay",
+      "Sun",
+      "Pulse",
+      "Alliance"
+    ],
+    "Australia": [
+      "Pacific",
+      "Island",
+      "Coastal",
+      "Drift"
+    ],
+    "Mexico": [
+      "Valley",
+      "Canyon",
+      "Spirit",
+      "Quest"
+    ],
+    "Nigeria": [
+      "Pulse",
+      "Impact",
+      "Rising",
+      "Energy"
+    ],
+    "Sweden": [
+      "Glass",
+      "Polar",
+      "Silent",
+      "Pure"
+    ],
+    "Argentina": [
+      "Southern",
+      "Basin",
+      "Echo",
+      "Flow"
+    ],
+    "Thailand": [
+      "Island",
+      "Tropical",
+      "Motion",
+      "Wave"
+    ],
+    "Iran": [
+      "Ancient",
+      "Desert",
+      "Legacy",
+      "Origin"
+    ],
+    "Poland": [
+      "Iron",
+      "Stone",
+      "Summit",
+      "Works"
+    ]
+  },
+  "meta": {
+    "schema_version": 1,
+    "artifact": "company_lexicon",
+    "generator_mode": "llm",
+    "model": "gemini-3.1-flash-lite"
+  }
+}

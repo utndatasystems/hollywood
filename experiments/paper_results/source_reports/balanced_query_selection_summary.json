@@ -1,0 +1,27 @@
+{
+  "task": "materialize_balanced_duckdb_pg_queries_20260522",
+  "source_query_root": "queries/previous_literal_repair_source",
+  "candidate_csv": "experiments/paper_results/source_reports/postgres_on_duckdb_mined_candidates.csv",
+  "out_query_root": "experiments/paper_results/source_candidate/queries",
+  "rows": 213,
+  "changed": 211,
+  "baseline_copied": 2,
+  "selection_audit_csv": "experiments/paper_results/source_candidate/audits/query_selection/balanced_query_selection_audit.csv",
+  "workloads": {
+    "JOB-Light": {
+      "queries": 70,
+      "changed": 70,
+      "baseline_copied": 0
+    },
+    "JOB": {
+      "queries": 113,
+      "changed": 113,
+      "baseline_copied": 0
+    },
+    "JOB-Complex": {
+      "queries": 30,
+      "changed": 28,
+      "baseline_copied": 2
+    }
+  }
+}

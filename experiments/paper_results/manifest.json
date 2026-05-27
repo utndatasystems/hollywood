@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-05-23T01:42:49",
+  "bundle": "experiments/paper_results",
+  "candidate": "experiments/paper_results/source_candidate",
+  "raw_csv": [
+    "base_selection_raw.csv",
+    "full_query_cardinality_raw.csv",
+    "intermediate_postgres_cardinality_raw.csv",
+    "intermediate_postgres_logical_subplans_raw.csv",
+    "intermediate_postgres_plan_nodes_raw.csv",
+    "selected_plan_cost_raw.csv"
+  ],
+  "summaries": [
+    "base_selection_summary.csv",
+    "benchmark_completeness_matrix.csv",
+    "final_bundle_integrity_audit.csv",
+    "full_query_cardinality_summary.csv",
+    "intermediate_logical_subplans_previous_vs_balanced_summary.csv",
+    "intermediate_plan_node_previous_vs_balanced_by_join_count.csv",
+    "intermediate_plan_node_previous_vs_balanced_summary.csv",
+    "intermediate_postgres_cardinality_summary.csv",
+    "intermediate_postgres_logical_subplans_summary.csv",
+    "intermediate_postgres_plan_nodes_summary.csv",
+    "selected_plan_cost_summary.csv"
+  ],
+  "plots": [
+    "base_selection_qerror_boxplot.pdf",
+    "base_selection_qerror_boxplot.png",
+    "base_selection_signed_error_boxplot.pdf",
+    "base_selection_signed_error_boxplot.png",
+    "full_query_cardinality_qerror_boxplot.pdf",
+    "full_query_cardinality_qerror_boxplot.png",
+    "full_query_cardinality_signed_error_boxplot.pdf",
+    "full_query_cardinality_signed_error_boxplot.png",
+    "postgres_intermediate_cardinality_by_join_count.pdf",
+    "postgres_intermediate_cardinality_by_join_count.png",
+    "selected_plan_cost_qerror_boxplot.pdf",
+    "selected_plan_cost_qerror_boxplot.png",
+    "selected_plan_cost_signed_error_boxplot.pdf",
+    "selected_plan_cost_signed_error_boxplot.png"
+  ],
+  "row_counts": {
+    "full_query_cardinality_raw": 1065,
+    "selected_plan_cost_raw": 1491,
+    "base_selection_raw": 1956,
+    "intermediate_postgres_cardinality_raw": 2889,
+    "completeness_checks": 24,
+    "intermediate_postgres_logical_subplans_raw": 2889,
+    "intermediate_postgres_plan_nodes_raw": 2889
+  },
+  "completeness_status": {
+    "ok": 24
+  },
+  "notes": [
+    "PostgreSQL selected-plan cost is scaled by workload log-mean runtime/cost ratio before q-error.",
+    "ZeroShot uses the repaired full213 LCM parse. Four long JOB plans are included, and PostgreSQL Memoize nodes are mapped to Materialize for checkpoint compatibility.",
+    "Paper-facing intermediate cardinality uses old-style exact logical subplan COUNT(*) labels reconstructed from PostgreSQL selected plan alias subtrees. The cheaper selected-plan JSON node rows are preserved separately as intermediate_postgres_plan_nodes_raw.csv."
+  ]
+}

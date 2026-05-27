@@ -1,0 +1,6 @@
+# Optional MSCN reproduction dependencies.
+# Pin torch to the CUDA/CPU build appropriate for your machine.
+torch
+scikit-learn
+networkx
+psycopg2-binary

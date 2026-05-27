@@ -1,0 +1,6 @@
+# Optional ZeroShot/lcm-eval wrapper dependencies.
+# Install the upstream lcm-eval/ZeroShot project according to its own README.
+torch
+numpy
+pandas
+scikit-learn

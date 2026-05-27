@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Hollywood: A Synthetic IMDb-Compatible Benchmark for Cardinality Estimation"
+message: "If you use this dataset or code, please cite the associated paper."
+type: dataset
+authors:
+  - family-names: "Iachnyk"
+    given-names: "Ivan"
+date-released: 2026-05-23
+license: CC-BY-NC-4.0

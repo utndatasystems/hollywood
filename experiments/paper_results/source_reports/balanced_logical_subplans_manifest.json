@@ -1,0 +1,27 @@
+{
+  "method": "balanced_200k_old_style_exact_logical_subplans",
+  "candidate": "experiments/paper_results/source_candidate",
+  "out_root": "experiments/paper_results/source_candidate/postgres_logical_subplans",
+  "db_name": "hollywood_200k",
+  "timeout_ms": 3600000,
+  "workloads": {
+    "job_light": {
+      "root_queries": 70,
+      "subplan_rows": 438,
+      "raw_plan_dir": "experiments/paper_results/source_candidate/postgres_selected_plan_cost_merged_q11/job_light/raw_plans",
+      "out_dir": "experiments/paper_results/source_candidate/postgres_logical_subplans/job_light"
+    },
+    "job_exact": {
+      "root_queries": 113,
+      "subplan_rows": 1841,
+      "raw_plan_dir": "experiments/paper_results/source_candidate/postgres_selected_plan_cost_merged_q11/job_exact/raw_plans",
+      "out_dir": "experiments/paper_results/source_candidate/postgres_logical_subplans/job_exact"
+    },
+    "job_complex": {
+      "root_queries": 30,
+      "subplan_rows": 610,
+      "raw_plan_dir": "experiments/paper_results/source_candidate/postgres_selected_plan_cost_merged_q11/job_complex/raw_plans",
+      "out_dir": "experiments/paper_results/source_candidate/postgres_logical_subplans/job_complex"
+    }
+  }
+}

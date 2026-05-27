@@ -1,0 +1,9 @@
+{
+  "task": "verify_literal_only_query_changes",
+  "before_query_root": "queries/previous_literal_repair_source",
+  "after_query_root": "experiments/paper_results/source_candidate/queries",
+  "rows": 213,
+  "text_changed": 211,
+  "failures": 0,
+  "audit_csv": "experiments/paper_results/source_candidate/audits/literal_only/literal_only_structure_audit.csv"
+}

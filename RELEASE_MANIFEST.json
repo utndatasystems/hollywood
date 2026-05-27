@@ -1,0 +1,52 @@
+{
+  "release_folder": "hollywood_public_release",
+  "created_date": "2026-05-23",
+  "dataset": {
+    "name": "hollywood_200k",
+    "duckdb": {
+      "path": "data/hollywood_200k.duckdb",
+      "size_mb": 248.01
+    },
+    "strict_csv_dir": {
+      "path": "data/imdb_csv",
+      "table_count": 21,
+      "size_mb": 827.45
+    },
+    "strict_csv_zip": {
+      "path": "data/hollywood_200k_imdb_csv.zip",
+      "size_mb": 188.94
+    },
+    "schema": "strict 21-table JOB/IMDb core schema"
+  },
+  "queries": {
+    "job_light": 70,
+    "job": 113,
+    "job_complex": 30
+  },
+  "code": {
+    "generator_python_files": 77,
+    "public_scripts": 8,
+    "tools": 1,
+    "mscn_python_files": 7,
+    "zeroshot_python_files": 3
+  },
+  "experiments": {
+    "paper_results_size_mb": 4.61
+  },
+  "llm_generation": {
+    "released_dataset_model": "gemini-3.1-flash-lite-preview",
+    "current_default_model": "gemini-3.1-flash-lite",
+    "note": "The released 200K dataset used the historical preview endpoint. New public generation runs should use the non-preview gemini-3.1-flash-lite default unless explicitly overridden."
+  },
+  "validation": [
+    "python scripts/validate_release.py",
+    "python scripts/smoke_test.py",
+    "python -m py_compile scripts/*.py generator/*.py tools/*.py experiments/**/*.py",
+    "python tools/check_export_integrity.py --db data/hollywood_200k.duckdb --out-dir audit/export_integrity"
+  ],
+  "notes": [
+    "Strict public dataset excludes optional generated-world extra tables.",
+    "Large data artifacts are configured for Git LFS via .gitattributes.",
+    "MSCN/ZeroShot folders contain wrappers and summaries, not full checkpoints or external upstream code."
+  ]
+}

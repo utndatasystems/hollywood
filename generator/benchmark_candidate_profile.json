@@ -1,0 +1,37 @@
+{
+  "mode": "research",
+  "priors": {
+    "target_actor_load": 4.9,
+    "target_director_load": 5.8,
+    "target_company_load": 13.0,
+    "shortlist_size": 144,
+    "cast_focus_exploration": 0.55,
+    "cast_base_focus_exploration": 0.6,
+    "cast_slot_exploration_empty": 0.55,
+    "cast_slot_exploration_filled": 0.5,
+    "director_exploration_share": 0.42,
+    "company_primary_exploration_share": 0.24,
+    "company_secondary_exploration_share": 0.3,
+    "graph_candidate_k": 180,
+    "graph_bridge_budget": 0.07,
+    "graph_same_block_share": 0.7,
+    "graph_closure_budget": 0.075
+  },
+  "runtime": {
+    "write_yearly_snapshots": false,
+    "disabled_secondary_tables": [
+      "reviews"
+    ],
+    "disabled_global_tables": [],
+    "disabled_post_loop_tables": [
+      "user_ratings",
+      "production_timeline",
+      "streaming_windows",
+      "person_contracts",
+      "movie_sequence",
+      "person_collaborations",
+      "media_links",
+      "world_events"
+    ]
+  }
+}

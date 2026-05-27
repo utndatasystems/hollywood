@@ -1,0 +1,556 @@
+[
+  {
+    "check": "manifest.completeness_status",
+    "observed": {
+      "ok": 24
+    },
+    "expected": {
+      "ok": 24
+    },
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "row_count.full_query_cardinality_raw",
+    "observed": 1065,
+    "expected": 1065,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "row_count.selected_plan_cost_raw",
+    "observed": 1491,
+    "expected": 1491,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "row_count.base_selection_raw",
+    "observed": 1956,
+    "expected": 1956,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "row_count.intermediate_postgres_cardinality_raw",
+    "observed": 2889,
+    "expected": 2889,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "completeness_matrix.status",
+    "observed": {
+      "ok": 24
+    },
+    "expected": {
+      "ok": 24
+    },
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.DuckDB.JOB-Light.rows",
+    "observed": 70,
+    "expected": 70,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.DuckDB.JOB.rows",
+    "observed": 113,
+    "expected": 113,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.DuckDB.JOB-Complex.rows",
+    "observed": 30,
+    "expected": 30,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.PostgreSQL.JOB-Light.rows",
+    "observed": 70,
+    "expected": 70,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.PostgreSQL.JOB.rows",
+    "observed": 113,
+    "expected": 113,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.PostgreSQL.JOB-Complex.rows",
+    "observed": 30,
+    "expected": 30,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.MSCN.JOB-Light.rows",
+    "observed": 210,
+    "expected": 210,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.MSCN.JOB.rows",
+    "observed": 339,
+    "expected": 339,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.MSCN.JOB-Complex.rows",
+    "observed": 90,
+    "expected": 90,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.PostgreSQL cost.JOB-Light.rows",
+    "observed": 70,
+    "expected": 70,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.PostgreSQL cost.JOB.rows",
+    "observed": 113,
+    "expected": 113,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.PostgreSQL cost.JOB-Complex.rows",
+    "observed": 30,
+    "expected": 30,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.MSCN cost.JOB-Light.rows",
+    "observed": 210,
+    "expected": 210,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.MSCN cost.JOB.rows",
+    "observed": 339,
+    "expected": 339,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.MSCN cost.JOB-Complex.rows",
+    "observed": 90,
+    "expected": 90,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.ZeroShot pretrained.JOB-Light.rows",
+    "observed": 210,
+    "expected": 210,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.ZeroShot pretrained.JOB.rows",
+    "observed": 339,
+    "expected": 339,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.ZeroShot pretrained.JOB-Complex.rows",
+    "observed": 90,
+    "expected": 90,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "base_selection.DuckDB.JOB-Light.positive_rows",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": "rows=157"
+  },
+  {
+    "check": "base_selection.DuckDB.JOB.positive_rows",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": "rows=629"
+  },
+  {
+    "check": "base_selection.DuckDB.JOB-Complex.positive_rows",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": "rows=192"
+  },
+  {
+    "check": "base_selection.PostgreSQL.JOB-Light.positive_rows",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": "rows=157"
+  },
+  {
+    "check": "base_selection.PostgreSQL.JOB.positive_rows",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": "rows=629"
+  },
+  {
+    "check": "base_selection.PostgreSQL.JOB-Complex.positive_rows",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": "rows=192"
+  },
+  {
+    "check": "full_query_cardinality.actual_cardinality.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.estimated_cardinality.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.q_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.signed_log10_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.q_error.ge_1",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.actual_runtime.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.predicted_value.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.q_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.signed_log10_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.q_error.ge_1",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "base_selection.actual_cardinality.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "base_selection.estimated_cardinality.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "base_selection.q_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "base_selection.signed_log10_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "base_selection.q_error.ge_1",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "intermediate_postgres_cardinality.actual_cardinality.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "intermediate_postgres_cardinality.estimated_cardinality.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "intermediate_postgres_cardinality.q_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "intermediate_postgres_cardinality.signed_log10_error.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "intermediate_postgres_cardinality.q_error.ge_1",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.duplicate_method_seed_query",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "selected_plan_cost.duplicate_method_seed_query",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.zero_estimates_flagged",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "full_query_cardinality.zero_estimates_not_exact_bias",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.full_query_cardinality_summary.csv.n.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.full_query_cardinality_summary.csv.q_median.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.full_query_cardinality_summary.csv.q_p95.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.full_query_cardinality_summary.csv.q_max.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.selected_plan_cost_summary.csv.n.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.selected_plan_cost_summary.csv.q_median.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.selected_plan_cost_summary.csv.q_p95.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.selected_plan_cost_summary.csv.q_max.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.base_selection_summary.csv.n.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.base_selection_summary.csv.q_median.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.base_selection_summary.csv.q_p95.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.base_selection_summary.csv.q_max.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.intermediate_postgres_cardinality_summary.csv.n.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.intermediate_postgres_cardinality_summary.csv.q_median.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.intermediate_postgres_cardinality_summary.csv.q_p95.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "summary.intermediate_postgres_cardinality_summary.csv.q_max.finite",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "plots.count",
+    "observed": 14,
+    "expected": 14,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "plots.nonempty",
+    "observed": 0,
+    "expected": 0,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "source_report.zeroshot_summary_qerrors.csv.exists",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "source_report.zeroshot_summary_qerrors.md.exists",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "source_report.postgres_cost_summary.csv.exists",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "source_report.balanced_candidate_full_benchmark_status.md.exists",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "source_report.mscn_cardinality_evaluation_manifest.json.exists",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": ""
+  },
+  {
+    "check": "source_report.mscn_cost_evaluation_manifest.json.exists",
+    "observed": true,
+    "expected": true,
+    "status": "ok",
+    "detail": ""
+  }
+]

@@ -1,0 +1,25 @@
+source_table,source_field,export_target,status,notes
+movie,title_id/title/year,title,preserved,Canonical JOB title rows.
+movie,genre,movie_info(info_type_id=3),derived,Primary genre is exported as a canonical IMDb genre row; generated subgenres such as Superhero/Martial Arts/Disaster/Experimental are canonicalized and kept verbatim in extras.
+movie_keyword + keyword,keyword.topic_genre,movie_info(info_type_id=3),derived,Secondary genres are canonicalized and derived only when keyword links provide topic evidence.
+movie_companies + company,company.specialty_genres,movie_info(info_type_id=3),derived,Secondary genres use canonicalized repeated company-specialty evidence as a weak signal.
+movie,country/language/certification/color/runtime/tagline/plot/aspect_ratio,movie_info,preserved,Mapped to canonical IMDb info_type ids where available.
+movie,rating/num_votes,movie_info_idx,preserved,Mapped to canonical IMDb numeric info_type ids where available.
+movie,budget/box_office,movie_info,preserved,Mapped to canonical IMDb budget/gross info_type ids used by JOB predicates.
+movie,production_tier/original_language/franchise/seed/snapshot,extra_movie.csv,extra-only,Synthetic-only or provenance fields are retained outside strict IMDb core.
+locations,city/country/location_type,movie_info(info_type_id=18),preserved,Generated filming/location rows map to IMDb locations.
+tv_series,genre/country/language/content_rating/plot_summary/network,movie_info + company_name + movie_companies,derived,TV-series title rows keep canonical metadata; unmapped generated network names are synthesized as IMDb company rows with source names preserved in extras.
+episodes,episode_number/runtime/director/writer/description/air_date,title + movie_info + cast_info,preserved,Episode numbering and crew facts map to canonical IMDb columns/rows; release-date country is inherited from the parent series.
+cast_info,person_id/title_id/character_name/billing_order,cast_info + char_name,preserved,Canonical cast rows and character names.
+cast_info,character_description/archetype/screen_time_minutes/salary_usd,extra_cast_info.csv,extra-only,Generated role richness is retained outside strict JOB.
+movie_companies,company_id/title_id/role,movie_companies,preserved,Roles are mapped to IMDb company_type ids.
+movie_companies,source role/year/media note,movie_companies.note,derived,IMDb-style notes are deterministic derivations.
+company,name,company_name.name,preserved,Canonical company names.
+company,country,company_name.country_code,derived,Strict JOB company_name.country_code is deterministically projected to an IMDb-like company-market distribution; source country is retained in extras and company_country_export_audit.csv.
+company,specialty_genres/tier/founded_year/defunct_year/style prefs,extra_company_metadata.csv,extra-only,Company lifecycle and preferences are not strict JOB columns.
+person,name/gender,name,preserved,Canonical person table with phonetic codes.
+person,career/style/market fields,extra_person_metadata.csv,extra-only,Generated person profile remains inspectable outside strict JOB.
+keyword,keyword,keyword,preserved,Canonical keyword table with phonetic codes.
+keyword,topic_genre/bucket/motif/specificity/scope,extra_keyword_metadata.csv,extra-only,Keyword semantics remain available for audits.
+release_dates,release_date/country/type,movie_info(info_type_id=16),derived,Converted to IMDb-style release-date strings.
+ratings_breakdown/reviews/awards/timelines,*,extra_*.csv,extra-only,Research metadata retained when --include-extras is enabled.
