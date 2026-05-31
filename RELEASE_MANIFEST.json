@@ -1,20 +1,20 @@
 {
   "release_folder": "hollywood_public_release",
-  "created_date": "2026-05-23",
+  "created_date": "2026-06-01",
   "dataset": {
     "name": "hollywood_200k",
     "duckdb": {
       "path": "data/hollywood_200k.duckdb",
-      "size_mb": 248.01
+      "size_mb": 268.45
     },
     "strict_csv_dir": {
       "path": "data/imdb_csv",
       "table_count": 21,
-      "size_mb": 827.45
+      "size_mb": 932.45
     },
     "strict_csv_zip": {
       "path": "data/hollywood_200k_imdb_csv.zip",
-      "size_mb": 188.94
+      "size_mb": 254.81
     },
     "schema": "strict 21-table JOB/IMDb core schema"
   },

@@ -32,6 +32,8 @@
   "genre_derivation": {
     "primary_movie_count": 200000,
     "genre_row_count": 446497,
+    "genre_row_count_scope": "primary movies only",
+    "all_title_genre_row_count": 597952,
     "secondary_genre_row_count": 246497,
     "movies_with_secondary_genres": 193384,
     "movies_without_primary_genre": 0,
