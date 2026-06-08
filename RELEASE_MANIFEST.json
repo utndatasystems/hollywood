@@ -36,7 +36,7 @@
   "llm_generation": {
     "released_dataset_model": "gemini-3.1-flash-lite-preview",
     "current_default_model": "gemini-3.1-flash-lite",
-    "note": "The released 200K dataset used the historical preview endpoint. New public generation runs should use the non-preview gemini-3.1-flash-lite default unless explicitly overridden."
+    "note": "The released Hollywood-200K dataset was generated with the model shown above. New public generation runs default to gemini-3.1-flash-lite unless explicitly overridden."
   },
   "validation": [
     "python scripts/validate_release.py",

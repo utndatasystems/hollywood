@@ -52,8 +52,8 @@
     "ok": 24
   },
   "notes": [
-    "PostgreSQL selected-plan cost is scaled by workload log-mean runtime/cost ratio before q-error.",
-    "ZeroShot uses the repaired full213 LCM parse. Four long JOB plans are included, and PostgreSQL Memoize nodes are mapped to Materialize for checkpoint compatibility.",
-    "Paper-facing intermediate cardinality uses old-style exact logical subplan COUNT(*) labels reconstructed from PostgreSQL selected plan alias subtrees. The cheaper selected-plan JSON node rows are preserved separately as intermediate_postgres_plan_nodes_raw.csv."
+    "PostgreSQL selected-plan cost is scaled by a workload-specific geometric-mean runtime/cost scale before q-error.",
+    "ZeroShot uses the full 213-query LCM parse. Four long JOB plans use the higher max-runtime parse path, and PostgreSQL Memoize nodes are mapped to Materialize for checkpoint compatibility.",
+    "Paper-facing intermediate cardinality uses exact logical-subplan COUNT(*) labels reconstructed from PostgreSQL selected-plan alias subtrees. The selected-plan JSON node rows are preserved separately as intermediate_postgres_plan_nodes_raw.csv."
   ]
 }

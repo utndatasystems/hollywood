@@ -24,9 +24,8 @@ GOOGLE_API_KEY=<your key>
 ```
 
 The released 200K dataset was generated with
-`gemini-3.1-flash-lite-preview`. That preview name is no longer the public
-default, so new runs use `gemini-3.1-flash-lite` unless you override the model
-role variables.
+`gemini-3.1-flash-lite-preview`. New runs use `gemini-3.1-flash-lite` unless
+you override the model role variables.
 
 For an OpenAI-compatible HTTP backend, set:
 
@@ -50,7 +49,7 @@ python generator/check_local_llm.py --model <served model name>
 python generator/run_pipeline.py --profile tiny10_1y --fresh --benchmark-mode --from-step 4 --until-step 100
 ```
 
-## Candidate Runs
+## Larger Profile Examples
 
 Examples:
 

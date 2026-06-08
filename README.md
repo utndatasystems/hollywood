@@ -120,9 +120,9 @@ python scripts/run_postgres_workload.py --workload all --conn "$PGDATABASE"
 
 ## Generate A New Dataset
 
-Generation requires an LLM backend. The published 200K dataset was generated
-with `gemini-3.1-flash-lite-preview`. That preview model name has since been
-retired; new runs in this release default to `gemini-3.1-flash-lite`.
+Generation requires an LLM backend. The published Hollywood-200K dataset was
+generated with `gemini-3.1-flash-lite-preview`. New runs in this release
+default to `gemini-3.1-flash-lite`.
 
 If you run the bundled generator in place, runtime outputs are written under
 `generator/`. See `docs/artifacts.md` for the workspace layout and the expected

@@ -6,14 +6,13 @@ package.
 
 ## Model Provenance
 
-The released Hollywood 200K dataset was generated with the historical model
-name `gemini-3.1-flash-lite-preview`. That preview endpoint has been
-discontinued. For new generation runs, this release uses
+The released Hollywood-200K dataset was generated with
+`gemini-3.1-flash-lite-preview`. For new generation runs, this release uses
 `gemini-3.1-flash-lite` as the default Gemini model in
 `generator/model_defaults.py` and `.env.example`.
 
-This means published data provenance and current reproducibility setup differ
-only in the model endpoint name:
+This keeps the published data provenance explicit while making the current
+generation default clear:
 
 ```text
 released dataset: gemini-3.1-flash-lite-preview

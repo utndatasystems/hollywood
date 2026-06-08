@@ -25,6 +25,6 @@ For a path-by-path map of release files, generated outputs, and evaluation
 results, see `../docs/artifacts.md`.
 
 The default Gemini model for new runs is `gemini-3.1-flash-lite`. The released
-200K dataset was generated with the earlier `gemini-3.1-flash-lite-preview`
-endpoint; see `../docs/api_setup.md` for the current Google API and
-OpenAI-compatible endpoint setup.
+Hollywood-200K dataset was generated with `gemini-3.1-flash-lite-preview`; see
+`../docs/api_setup.md` for the current Google API and OpenAI-compatible
+endpoint setup.

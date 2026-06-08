@@ -1,4 +1,4 @@
-# Balanced DuckDB/PostgreSQL 200K Candidate Benchmark Status
+# Hollywood-200K DBMS-Guided Workload Status
 
 Query root: `queries/`.
 
@@ -35,7 +35,7 @@ Query root: `queries/`.
 | job_complex | 2 | 4.28 | 63.3 | 64.4 |
 | job_complex | pooled | 4.33 | 51.4 | 64.4 |
 
-## Saved MSCN full-query cardinality, trained on 200K stablekw
+## Saved MSCN full-query cardinality, trained on Hollywood-200K
 | Workload | Seed | N | Median Q | P95 Q | Max Q |
 |---|---:|---:|---:|---:|---:|
 | job_light | 1 | 70 | 7.47 | 3.49e+05 | 3.13e+06 |
@@ -48,7 +48,7 @@ Query root: `queries/`.
 | job | 3 | 113 | 3.67 | 818 | 5.34e+04 |
 | job_complex | 3 | 30 | 5.22 | 1.48e+04 | 5.7e+04 |
 
-## Saved MSCN selected-plan cost/runtime, trained on 200K stablekw
+## Saved MSCN selected-plan cost/runtime, trained on Hollywood-200K
 | Workload | Seed | N | Median Q | P95 Q | Max Q |
 |---|---:|---:|---:|---:|---:|
 | job_light | 1 | 70 | 4.83 | 1.79e+03 | 6.47e+03 |

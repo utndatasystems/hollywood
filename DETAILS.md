@@ -24,5 +24,5 @@ Generated richness that does not map naturally to IMDb/JOB is not forced into
 core columns. Export audit files document preserved, derived, flattened, omitted,
 and extra-only fields.
 
-The genre repair exports primary and signal-backed secondary genres as separate
+The genre export represents primary and signal-backed secondary genres as separate
 `movie_info` rows with `info_type_id = 3`, matching IMDb/JOB semantics.
